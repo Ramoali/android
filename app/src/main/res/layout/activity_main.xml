@@ -1,20 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <Button
         android:id="@+id/btn_login_enseignant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connexion Enseignant" />
+        android:text="Connexion Enseignant"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_login_etudiant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Connexion Étudiant"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textStyle="bold" />
 </LinearLayout>

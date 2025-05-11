@@ -3,13 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5">
 
     <EditText
         android:id="@+id/edt_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ID Enseignant"/>
+        android:hint="ID Enseignant"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E" />
 
     <EditText
         android:id="@+id/edt_password"
@@ -17,19 +23,28 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:layout_marginTop="16dp"
-        android:hint="Mot de passe"/>
+        android:hint="Mot de passe"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Se connecter"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Créer un compte"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
 </LinearLayout>

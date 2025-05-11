@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
-    android:background="#f1f1f1"
-    android:layout_marginBottom="8dp">
+    android:background="#FFFFFF"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
 
     <!-- Informations sur l'absence -->
     <TextView
@@ -14,14 +15,15 @@
         android:layout_height="wrap_content"
         android:text="CNE: 12345\nDate: 2023-05-01\nSéance: 2\nJustifiée: Oui\nPénalité: Oui"
         android:textSize="14sp"
-        android:layout_marginBottom="8dp"/>
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp"/>
 
     <!-- Ligne séparatrice -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#D3D3D3"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <!-- Boutons Modifier et Supprimer -->
     <LinearLayout
@@ -38,9 +40,10 @@
             android:text="Modifier"
             android:textColor="#FFFFFF"
             android:background="@android:color/holo_blue_dark"
-            android:padding="8dp"
-            android:textSize="12sp"
-            android:layout_marginEnd="8dp"/>
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="4dp"/>
 
         <!-- Bouton Supprimer -->
         <Button
@@ -50,7 +53,8 @@
             android:text="Supprimer"
             android:textColor="#FFFFFF"
             android:background="@android:color/holo_red_dark"
-            android:padding="8dp"
-            android:textSize="12sp"/>
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,35 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#f1f1f1"
-    android:layout_marginBottom="8dp">
+    android:background="#FFFFFF"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
 
-    <TextView android:id="@+id/txt_matiere"
+    <!-- Matière -->
+    <TextView
+        android:id="@+id/txt_matiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Matière: " />
+        android:text="Matière: "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp"/>
 
-    <TextView android:id="@+id/txt_date"
+    <!-- Date -->
+    <TextView
+        android:id="@+id/txt_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date: " />
+        android:text="Date: "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp"/>
 
-    <TextView android:id="@+id/txt_seance"
+    <!-- Séance -->
+    <TextView
+        android:id="@+id/txt_seance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Séance: " />
+        android:text="Séance: "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp"/>
 
-    <TextView android:id="@+id/txt_justifiee"
+    <!-- Justifiée -->
+    <TextView
+        android:id="@+id/txt_justifiee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Justifiée: " />
+        android:text="Justifiée: "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"/>
 
+    <!-- Bouton Justifier -->
     <Button
         android:id="@+id/btn_justifier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Justifier"
-        android:layout_marginTop="8dp"/>
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_green_dark"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"/>
+
 </LinearLayout>

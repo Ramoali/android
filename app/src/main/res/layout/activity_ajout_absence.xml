@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,39 +15,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CNE de l'étudiant"
-            android:inputType="text" />
+            android:inputType="text"
+            android:backgroundTint="#03A9F4"
+            android:padding="12dp" />
 
         <Spinner
             android:id="@+id/spinnerMatiere"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#03A9F4" />
 
         <EditText
             android:id="@+id/editDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Date (ex: 2024-05-10)"
-            android:inputType="date" />
+            android:inputType="date"
+            android:backgroundTint="#03A9F4"
+            android:padding="12dp" />
 
         <EditText
             android:id="@+id/editSeance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Séance"
-            android:inputType="text" />
+            android:inputType="text"
+            android:backgroundTint="#03A9F4"
+            android:padding="12dp" />
 
         <CheckBox
             android:id="@+id/checkJustifiee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Justifiée" />
+            android:text="Justifiée"
+            android:textColor="#333" />
 
         <CheckBox
             android:id="@+id/checkPenalite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Avec pénalité" />
+            android:text="Avec pénalité"
+            android:textColor="#333" />
 
         <Button
             android:id="@+id/btnAjouterAbsence"
@@ -55,6 +65,9 @@
             android:text="Ajouter l'absence"
             android:layout_marginTop="24dp"
             android:backgroundTint="#2196F3"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
     </LinearLayout>
 </ScrollView>

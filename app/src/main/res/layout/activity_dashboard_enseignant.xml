@@ -5,36 +5,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="#FAFAFA">
 
     <TextView
         android:id="@+id/txt_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenue, Professeur"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:textColor="#212121"
+        android:layout_marginBottom="32dp" />
 
     <Spinner
         android:id="@+id/spinner_matiere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:backgroundTint="#03A9F4"
+        android:layout_marginBottom="20dp" />
 
     <Button
         android:id="@+id/btn_rechercher_absences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Rechercher les absences"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
 
     <Button
         android:id="@+id/btnAjouterAbsence"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ajouter une absence"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
 
     <Button
         android:id="@+id/btn_deconnexion"
@@ -42,6 +51,7 @@
         android:layout_height="wrap_content"
         android:text="Déconnexion"
         android:backgroundTint="#D32F2F"
-        android:textColor="#ffffff" />
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
 
 </LinearLayout>
