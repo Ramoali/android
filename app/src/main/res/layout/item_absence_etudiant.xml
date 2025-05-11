@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f1f1f1"
+    android:layout_marginBottom="8dp">
+
+    <TextView android:id="@+id/txt_matiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matière: " />
+
+    <TextView android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: " />
+
+    <TextView android:id="@+id/txt_seance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Séance: " />
+
+    <TextView android:id="@+id/txt_justifiee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Justifiée: " />
+
+    <Button
+        android:id="@+id/btn_justifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Justifier"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
