@@ -30,6 +30,11 @@
         <activity android:name=".activity.LoginEtudiantActivity" android:exported="false" />
         <activity android:name=".activity.SignUpEtudiantActivity" android:exported="false" />
         <activity android:name=".activity.DashboardEtudiantActivity" android:exported="false" />
+        <activity android:name=".activity.AjoutAbsenceActivity" />
+        <activity android:name=".activity.ListeAbsencesParMatiereActivity" />
+        <activity android:name=".activity.ModifierAbsenceActivity" />" />
+
+
     </application>
 
 </manifest>

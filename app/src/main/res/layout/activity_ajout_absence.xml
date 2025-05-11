@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editCne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNE de l'étudiant"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/spinnerMatiere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (ex: 2024-05-10)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editSeance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Séance"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/checkJustifiee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Justifiée" />
+
+        <CheckBox
+            android:id="@+id/checkPenalite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avec pénalité" />
+
+        <Button
+            android:id="@+id/btnAjouterAbsence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter l'absence"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

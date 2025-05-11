@@ -12,6 +12,13 @@
         android:textSize="18sp"
         android:text="CNE : " />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_absences"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"

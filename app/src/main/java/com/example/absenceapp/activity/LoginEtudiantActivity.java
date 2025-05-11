@@ -2,7 +2,6 @@ package com.example.absenceapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,8 +25,8 @@ public class LoginEtudiantActivity extends AppCompatActivity {
         db = AppDatabase.getInstance(this);
 
         findViewById(R.id.btn_login).setOnClickListener(v -> {
-            String cne = edtCne.getText().toString();
-            String password = edtPassword.getText().toString();
+            String cne = edtCne.getText().toString().trim();
+            String password = edtPassword.getText().toString().trim();
 
             if (cne.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
@@ -38,7 +37,10 @@ public class LoginEtudiantActivity extends AppCompatActivity {
                 Etudiant etudiant = db.etudiantDao().login(cne, password);
                 runOnUiThread(() -> {
                     if (etudiant != null) {
-                        startActivity(new Intent(LoginEtudiantActivity.this, DashboardEtudiantActivity.class));
+                        Intent intent = new Intent(LoginEtudiantActivity.this, DashboardEtudiantActivity.class);
+                        intent.putExtra("etudiant_cne", etudiant.getCne()); // ✅ Ajout ici
+                        startActivity(intent);
+                        finish(); // facultatif : pour empêcher retour au login
                     } else {
                         Toast.makeText(LoginEtudiantActivity.this, "Identifiants incorrects", Toast.LENGTH_SHORT).show();
                     }
