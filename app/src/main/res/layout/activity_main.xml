@@ -7,24 +7,42 @@
     android:padding="24dp"
     android:background="#F5F5F5">
 
+    <!-- Optional App Title -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Connexion Enseignant Button -->
     <Button
         android:id="@+id/btn_login_enseignant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Connexion Enseignant"
-        android:backgroundTint="#1976D2"
         android:textColor="#FFFFFF"
-        android:padding="12dp"
-        android:textStyle="bold" />
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded_gradient"
+        android:elevation="6dp" />
 
+    <!-- Connexion Étudiant Button -->
     <Button
         android:id="@+id/btn_login_etudiant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Connexion Étudiant"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#388E3C"
         android:textColor="#FFFFFF"
-        android:padding="12dp"
-        android:textStyle="bold" />
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_etudiant_gradient"
+        android:elevation="6dp"/>
+
 </LinearLayout>

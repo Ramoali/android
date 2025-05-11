@@ -2,34 +2,72 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#FAFAFA">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
+        <!-- Optional App Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remplissez les informations ci-dessous"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="24dp" />
+
+        <!-- CNE -->
         <EditText
             android:id="@+id/edt_cne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CNE Étudiant"
             android:textSize="16sp"
-            android:backgroundTint="#CCCCCC"
-            android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Nom complet -->
         <EditText
             android:id="@+id/edt_nom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nom complet"
             android:textSize="16sp"
-            android:backgroundTint="#CCCCCC"
-            android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Email -->
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
@@ -37,10 +75,13 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:textSize="16sp"
-            android:backgroundTint="#CCCCCC"
-            android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Password -->
         <EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
@@ -48,19 +89,23 @@
             android:hint="Mot de passe"
             android:inputType="textPassword"
             android:textSize="16sp"
-            android:backgroundTint="#CCCCCC"
-            android:padding="10dp"
-            android:layout_marginBottom="20dp" />
+            android:background="@drawable/edittext_background"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="24dp" />
 
+        <!-- Signup Button -->
         <Button
             android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="S'inscrire"
-            android:backgroundTint="#1976D2"
+            android:background="@drawable/button_primary"
             android:textColor="#FFFFFF"
-            android:padding="12dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:elevation="4dp" />
 
     </LinearLayout>
 </ScrollView>
